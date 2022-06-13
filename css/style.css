@@ -115,12 +115,7 @@ margin: 0 auto;
   background-color: #005BBB;
   color: #fff;
 }
-/* 
-.image__slider{
-  display: flex;
-  justify-content: space-between;
-  min-width: 0;
-} */
+
 
 .slider__item{
   width: 390px;
@@ -206,16 +201,6 @@ margin: 0 auto;
 .first__word{
   font-size: 48px;
 }
-
-/* .contact{
-  max-width:1024px;
-  height: 120px;
-  border:1px solid #005BBB;
-	background:#FFF;
-	margin:0 0 5px;
-  display: flex;
-  justify-content: space-between;
-} */
 
 .form{
   max-width:1024px;
