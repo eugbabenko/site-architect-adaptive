@@ -13,33 +13,35 @@
     
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a class="logo" href="#" title="logo">
-                    <svg width="100" height="60" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M84 19.6667L50.0557 0L16 19.6667V59L84 19.6667Z" fill="#005BBB"/>
-                        <path d="M84 59V25.6334L54.9227 42.2083L84 59Z" fill="#005BBB"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M51.6327 45.366L28.25 58.866L27.75 58L51.1327 44.5L51.6327 45.366Z" fill="#005BBB"/>
-                        </svg>
-                </a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li>
-                            <a href="#" class="menu__link" >gallery
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="menu__link" >history
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="menu__link" >contact us
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <header class="header" id="header">
+        <a href="#" class="logo">
+            <svg width="68" height="59" viewBox="0 0 68 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M68 19.6667L34.0557 0L0 19.6667V59L68 19.6667Z" fill="#005BBB"/>
+                <path d="M68 59V25.6334L38.9227 42.2083L68 59Z" fill="#005BBB"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" fill="#005BBB"/>
+            </svg>
+        </a>
+        <button class="btn-burger" id="btn-burger">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8H48V13H0V8Z" fill="#005BBB"/>
+                <path d="M0 21H48V26H0V21Z" fill="#005BBB"/>
+                <path d="M48 34H0V39H48V34Z" fill="#005BBB"/>
+            </svg>
+        </button>
+        <div class="header-navigation">
+            <nav class="nav">
+                <a href="#">gallery</a>
+                <a href="#">history</a>
+                <a href="#">contact us</a>
+            </nav>
+            <div class="dropdown">
+                <button class="btn-close" id="btn-close">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9996 19.9646L8.79676 4.76172L5.26123 8.29725L20.4641 23.5001L5.26136 38.7029L8.7969 42.2384L23.9996 27.0357L39.2024 42.2384L42.7379 38.7028L27.5352 23.5001L42.738 8.29726L39.2025 4.76173L23.9996 19.9646Z" fill="white"/>
+                    </svg>
+                </button>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>    
         </div>
     </header>
     <section class="gallery">

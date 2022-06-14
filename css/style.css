@@ -89,7 +89,7 @@ margin: 0 auto;
   margin: 0 auto;
   }
 
-.header__inner{
+/* .header__inner{
   margin: 80px auto;
   display: block;
   text-align: center;
@@ -114,8 +114,63 @@ margin: 0 auto;
 .menu__link:hover{
   background-color: #005BBB;
   color: #fff;
+}  */
+
+/* Burger start */
+
+.header {
+  padding: 48px 60px;
+  position: relative;
+}
+.logo {
+  width: 68px;
+  height: 59px;
+  display: block;
+  margin: 0 auto 80px;
+  position: relative;
+  z-index: 999;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 80px;
+}
+.nav a {
+  margin: 0 40px;
+  color: #005BBB;
+  text-decoration: none;
+}
+.btn-burger {
+  display: none;
+  position: absolute;
+  top: 48px;
+  right: 60px;
+  border: 0;
+  background: none;
 }
 
+.dropdown {
+  display: none;
+}
+
+.btn-close {
+  position: absolute;
+  top: 48px;
+  right: 60px;
+  border: 0;
+  background: none;
+}
+.content__img {
+  padding: 60px;
+  text-align: center;
+  margin: 0 auto;
+  background: rgba(0, 91, 187, 0.2);
+}
+.content__text {
+  margin: 60px;
+}
+
+/* Burger end */
 
 .slider__item{
   width: 390px;
@@ -252,4 +307,68 @@ textarea::placeholder {
   transition: all .2s;
 }
 
+/* Медиазапросы */
 
+@media only screen
+    and (max-width: 1023px) {
+        .logo {
+            margin: 0;
+        }
+        .btn-burger {
+            display: block;
+        }
+        .header-navigation {
+            display: none;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #005BBB;
+            padding: 228px 60px 148px;
+            color: #fff;
+        }
+        .menu-open .header-navigation,
+        .menu-open .header-navigation .dropdown {
+            display: block;
+        }
+        .menu-open .logo svg * {
+            fill: #fff;
+        }
+        .menu-open .nav a {
+            color: #fff;
+        }
+    }
+
+@media only screen
+    and (max-width: 850px) {
+        .header {
+            padding: 0;
+        }
+        .logo {
+            display: none;
+        }
+        .menu-open .logo {
+            display: block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .btn-burger,
+        .btn-close {
+            top: 20px;
+            right: 20px;
+        }
+        .header-navigation {
+            padding: 120px 20px 60px;
+        }
+        .nav {
+            display: block;
+        }
+        .nav a {
+            display: block;
+            margin: 0 0 48px;
+        }
+        .content__text {
+            margin: 20px;
+        }
+    }
