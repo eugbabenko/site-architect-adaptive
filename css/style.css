@@ -116,12 +116,18 @@ margin: 0 auto;
   color: #fff;
 }  */
 
+
+.gallery__inner{
+  position: relative;
+  z-index: -1;
+}
 /* Burger start */
 
 .header {
   padding: 48px 60px;
   position: relative;
 }
+
 .logo {
   width: 68px;
   height: 59px;
@@ -139,7 +145,12 @@ margin: 0 auto;
   margin: 0 40px;
   color: #005BBB;
   text-decoration: none;
-}
+} 
+  .nav a:hover{
+  background-color: #005BBB;
+  color: #fff;
+  }
+
 .btn-burger {
   display: none;
   position: absolute;
@@ -160,15 +171,6 @@ margin: 0 auto;
   border: 0;
   background: none;
 }
-.content__img {
-  padding: 60px;
-  text-align: center;
-  margin: 0 auto;
-  background: rgba(0, 91, 187, 0.2);
-}
-.content__text {
-  margin: 60px;
-}
 
 /* Burger end */
 
@@ -178,6 +180,8 @@ margin: 0 auto;
   border-left-width: 10px;
   border-left-style: solid;
   border-image: linear-gradient( to bottom, #005BBB 50%, #FFD500 50% ) 1;
+  
+  
 }
 
 .slick-slide{
@@ -185,10 +189,11 @@ margin: 0 auto;
 }
 
 .slick-dots{
-  /* position: absolute; */
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+
 }
 
 .slick-dots button{
