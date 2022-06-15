@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <header class="header" id="header">
@@ -28,11 +27,11 @@
                 <path d="M48 34H0V39H48V34Z" fill="#005BBB"/>
             </svg>
         </button>
-        <div class="header-navigation">
+        <div class="header__nav">
             <nav class="nav">
-                <a href="#">gallery</a>
-                <a href="#">history</a>
-                <a href="#">contact us</a>
+                <a href="#gallery">gallery</a>
+                <a href="#history">history</a>
+                <a href="#contact">contact us</a>
             </nav>
             <div class="dropdown">
                 <button class="btn-close" id="btn-close">
@@ -40,11 +39,14 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9996 19.9646L8.79676 4.76172L5.26123 8.29725L20.4641 23.5001L5.26136 38.7029L8.7969 42.2384L23.9996 27.0357L39.2024 42.2384L42.7379 38.7028L27.5352 23.5001L42.738 8.29726L39.2025 4.76173L23.9996 19.9646Z" fill="white"/>
                     </svg>
                 </button>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <form class="form_up">
+                    <textarea class="textfield_up" name="Message" rows="1" placeholder="type your message here"></textarea>
+                    <button class="btn_up" type="submit">Send</button>
+               </form>
             </div>    
         </div>
     </header>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="container">
             <div class="gallery__inner">
                 <div class="image__slider">
@@ -68,13 +70,13 @@
              <p class="paragraph">Glory to Ukraine!</p>
         </div>
     </article>
-    <section class="history">
+    <section class="history" id="history">
         <div class="container__inner">
             <div class="longline"></div>
             <h2>History</h2>
             <div class="shortline"></div>
             <div class="box">
-                <div class="box__inner">
+                <div class="box__inner box__margin">
                     <p class="box__text"><span class="first__word">1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.</p>
                 </div>
                 <div class="box__inner">
@@ -87,10 +89,10 @@
         </div>
     </section>
     <div class="container__inner">
-            <form class="form">
-                <textarea class="textfield" name="Message" placeholder="type your message here"></textarea>
-                <button class="btn" type="submit">Send</button>
-           </form>
+        <form class="form">
+            <textarea id="contact" class="textfield" rows="1" name="Message" placeholder="type your message here"></textarea>
+            <button class="btn" type="submit">Send</button>
+        </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>

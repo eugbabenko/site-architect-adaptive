@@ -15,7 +15,7 @@ $(function(){
           }
         },
           {
-            breakpoint: 850,
+            breakpoint: 740,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -32,9 +32,8 @@ $(function(){
   
   btn__burger.addEventListener('click', function(){
       header.classList.add('menu-open');
-  
+
       btn__close.addEventListener('click', function(){
-  
           header.classList.replace('menu-open', 'header')
       })
   })
