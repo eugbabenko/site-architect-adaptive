@@ -117,15 +117,17 @@ margin: 0 auto;
 }  */
 
 
-.gallery__inner{
+/* .gallery__inner{
   position: relative;
   z-index: -1;
-}
+} */
+
 /* Burger start */
 
 .header {
   padding: 48px 60px;
   position: relative;
+  z-index: 9999;
 }
 
 .logo {
@@ -134,7 +136,7 @@ margin: 0 auto;
   display: block;
   margin: 0 auto 80px;
   position: relative;
-  z-index: 999;
+  z-index: 9999;
 }
 .nav {
   display: flex;
