@@ -55,7 +55,6 @@ a{
   text-decoration: none;
   color: inherit;
 }
-
 h2{
   text-transform: uppercase;
   font-weight: 900;
@@ -425,8 +424,40 @@ textarea::placeholder {
 
 @media only screen
   and (max-width: 736px) {
+
+    h2{
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .container{
+      padding: 0;
+      margin: 0;
+    }
+
+    .slick-dots button{
+      font-size: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      margin: 40px 8px 28px;
+    }
+    
+    .slick-slide {
+      margin: 0;
+    }
+
+    .container__inner{
+      padding: 0 20px;
+    }
+
     .header {
       padding: 0;
+    }
+
+    .main__text{
+      font-size: 18px;
+      margin: 0 auto 48px;
     }
 
     .logo {
@@ -463,4 +494,84 @@ textarea::placeholder {
       margin: 20px;
     }
 
+    .box__inner {
+      font-size: 16px;
+      line-height: 19px;
     }
+
+    .first__word{
+      display: block;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    .box{
+      margin-bottom: 48px;
+    }
+
+    .menu-open .nav a {
+      padding: 5px 0px;
+    }
+
+    .form{
+      max-width:100%;
+      height: auto;
+      border: 0;
+      background:#FFF;
+      margin: 24px 0 120px;
+      padding: 0;
+      display: block;
+    }
+    
+    .textfield{
+      max-width:100%;
+      height: 150px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      border: 1px solid #005BBB;
+    }
+    
+    textarea::placeholder {
+      line-height: 44px;
+      color: #005BBB;
+      text-align: center;
+    }
+    
+    .btn{
+      width: 100%;
+      padding: 13px auto;
+      margin: 19px auto 0px;
+    }
+    
+    .form_up{
+      max-width:100%;
+      height: auto;
+      border: 0;
+      margin: 24px 0;
+      padding: 0;
+      display: block;
+    }
+    
+    .textfield_up{
+      max-width:100%;
+      height: 150px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      border: 1px solid #FFFFFF;
+    }
+    
+    .textfield_up::placeholder {
+      line-height: 44px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    
+    .btn_up{
+      width: 100%;
+      padding: 13px auto;
+      margin: 19px auto 0px;
+    }
+  
+  }
